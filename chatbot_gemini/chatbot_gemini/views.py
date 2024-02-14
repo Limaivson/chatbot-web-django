@@ -2,4 +2,4 @@ from django.shortcuts import render
 
 
 def texto(request):
-    return render(request, 'texto.html', {})
+    return render(request, 'index.html', {})

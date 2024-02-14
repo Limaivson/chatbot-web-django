@@ -1,0 +1,30 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat Simples</title>
+  <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+  <div class="container">
+    <h1>Chat Simples</h1>
+    <div class="chat-area">
+      <div class="mensagem-usuario">
+        <p>Olá, servidor! </p>
+      </div>
+      <div class="mensagem-servidor">
+        <p>Olá! O que você gostaria de saber hoje?</p>
+      </div>
+    </div>
+    <form action="#">
+      <input type="text" id="mensagem" placeholder="Digite sua mensagem...">
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+
+  <script src="{% static 'script.js' %}"></script>
+</body>
+</html>
