@@ -26,7 +26,7 @@ h1 {
   max-height: 300px;
 }
 
-.mensagem-usuario {
+.mensagem-servidor {
   background-color: #f9f9f9;
   padding: 10px;
   margin-bottom: 10px;
@@ -35,7 +35,7 @@ h1 {
   clear: both;
 }
 
-.mensagem-servidor {
+.mensagem-usuario {
   background-color: #ddd;
   padding: 10px;
   margin-bottom: 10px;
