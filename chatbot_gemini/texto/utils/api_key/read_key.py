@@ -1,11 +1,7 @@
-import json
-import os
-
-script_directory = os.path.dirname(os.path.abspath(__file__))
-path = os.path.join(script_directory, 'key.json')
+from decouple import config
 
 
 def get_api_key():
-    with open(path, 'r') as api_key:
-        key = json.load(api_key)
-    return str(key['key'])
+    api_key = config('API_KEY')
+    # debug_mode = config('DEBUG', default=False, cast=bool)
+    return str(api_key)
