@@ -1,0 +1,38 @@
+/* chatbot/static/style.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.chat-area {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.mensagem-servidor {
+    margin-bottom: 10px;
+}
+
+#mensagem, #imagem, button {
+    margin-top: 10px;
+}
+
+#retorno-servidor {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #e1f5fe;
+    border-radius: 4px;
+    border: 1px solid #bbdefb;
+}

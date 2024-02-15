@@ -27,7 +27,7 @@ botaoEnviar.addEventListener('click', async (event) => {
 });
 
 async function enviarMensagemParaServidor(mensagem) {
-  const resposta = await fetch('/send', {
+  const resposta = await fetch('/send-text', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
