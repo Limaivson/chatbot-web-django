@@ -1,3 +1,9 @@
 from django.shortcuts import render
 
-# Create your views here.
+
+def image(request):
+    pass
+
+
+def send_image(request):
+    pass
