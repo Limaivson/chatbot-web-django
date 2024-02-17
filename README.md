@@ -7,7 +7,7 @@ Este projeto Django é um aplicativo da web que implementa um chatbot com suport
 1. Clone o repositório para sua máquina local:
 
     ```bash
-    git clone https://github.com/seu-usuario/nome-do-repositorio.git
+    git clone https://github.com/Limaivson/chatbot-web-django
     ```
 
 2. Navegue até o diretório do projeto:
