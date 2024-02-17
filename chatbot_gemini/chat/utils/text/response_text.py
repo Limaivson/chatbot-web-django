@@ -8,6 +8,6 @@ class ResponseText:
         self.genai = genai.configure(api_key=f'{self.api_key}')
         self.model = genai.GenerativeModel('gemini-pro')
 
-    def responseGeminai(self, text):
+    def response_geminai(self, text):
         response = self.model.generate_content(str(text))
         return response.text
