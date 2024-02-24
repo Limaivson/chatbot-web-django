@@ -16,4 +16,3 @@ class ResponseImage:
         response = self.model.generate_content([message, image])
         response.resolve()
         return response.text
-    
