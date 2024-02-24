@@ -8,6 +8,10 @@ response_image = ResponseImage()
 response_text = ResponseText()
 
 
+def index(request):
+    return render(request, 'index.html', {})
+
+
 def texto(request):
     return render(request, 'texto.html', {})
 
@@ -19,7 +23,7 @@ def message(request):
         mensagem_usuario = data.get('mensagem', '')
 
         # Chama a função responseGeminai para obter a resposta
-        resposta_servidor = response_text.responseGeminai(mensagem_usuario)
+        resposta_servidor = response_text.response_geminai(mensagem_usuario)
 
         return JsonResponse({'respostaServidor': resposta_servidor})
 
