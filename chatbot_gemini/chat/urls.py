@@ -6,4 +6,5 @@ urlpatterns = [
     path('send-image/', views.send_image, name='send-image'),
     path('text/', views.texto, name='texto'),
     path('send-text', views.message, name='send-text'),
+    path('', views.index, name='index'),
 ]
