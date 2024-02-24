@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #EEF0F2;
+}
+
+.container {
+    width: 80%;
+    margin: 50px auto;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+.frame {
+    margin-top: 50px;
+    border: 2px solid #EEC643; /* Cor da borda cinza */
+    background-color: #EEC643; /* Cor de fundo cinza */
+    border-radius: 10px;
+    padding: 20px;
+    display: inline-block; /* Impede que o frame se estenda por toda a largura */
+    width: 60%; /* Aumento da largura do frame */
+}
+
+button {
+    display: block; /* Faz os botões aparecerem um abaixo do outro */
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    background-color: #011638;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px; /* Espaço entre os botões */
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
