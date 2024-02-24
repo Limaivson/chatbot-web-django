@@ -23,16 +23,14 @@ def message(request):
 
     return JsonResponse({'error': 'Método não permitido'}, status=405)
 
+
 def send_image(request):
     if request.method == 'POST':
-        mensagem = request.POST.get('mensagem')
-        imagem = request.FILES.get('imagem')
-        print(imagem, mensagem)
+        message_image = request.POST.get('mensagem')
+        image = request.FILES.get('imagem')
 
-        # Lógica para processar a mensagem e a imagem usando a classe ResponseImage
-        response = response_image.read_image(imagem, mensagem)
+        response = response_image.read_image(image, message_image)
 
-        # Simulando uma resposta do servidor (você deve substituir isso pela lógica real)
         resposta_servidor = 'Sua mensagem e imagem foram processadas com sucesso!'
 
         return JsonResponse({'message': resposta_servidor, 'response_text': response})
