@@ -24,7 +24,6 @@ def message(request):
     return JsonResponse({'error': 'Método não permitido'}, status=405)
 
 def send_image(request):
-    print('a')
     if request.method == 'POST':
         mensagem = request.POST.get('mensagem')
         imagem = request.FILES.get('imagem')
